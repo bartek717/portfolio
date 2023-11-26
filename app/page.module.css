@@ -5,6 +5,7 @@
   justify-content: space-between; /* This will push the footer to the bottom */
   min-height: 100vh; /* Full height of the viewport */
   overflow: hidden;
+  margin: 0;
   /* min-height: 100vh; Ensure it takes the full viewport height */
 }
 
