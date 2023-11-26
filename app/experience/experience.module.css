@@ -27,7 +27,6 @@
     margin-bottom: 2%;
     position: relative; /* Needed for the absolute positioning of the pseudo-element */
     outline: 2px solid #BBAEA0; /* Example outline for text section */
-    padding-left: 5%;
   }
   
   .mainContainer::after {
