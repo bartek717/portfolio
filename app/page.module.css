@@ -27,7 +27,8 @@
     margin-bottom: 2%;
     position: relative; /* Needed for the absolute positioning of the pseudo-element */
     outline: 2px solid #BBAEA0; /* Example outline for text section */
-    padding-left: 5%;
+    
+    /* margin-right: 5%; */
   }
   
   .mainContainer::after {
@@ -43,6 +44,10 @@
   .mainText {
     padding-top: 3%;
     padding-bottom: 3%;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 2%;
   }
 
   .textSection {
@@ -50,11 +55,15 @@
     flex-direction: column;
     justify-content: space-between; /* Align items vertically with space between */
     max-width: 50%;
+    
     min-height: 100%; /* Adjust minimum height as necessary */
   }
   
   .socialLinks {
-    padding: 3% 0; 
+    /* padding: 3% 0;  */
+    padding-left: 5%;
+    padding-bottom: 3%;
+    
   }
   .imageSection {
     flex: 1; /* This allows the image section to grow and take up available space */
@@ -69,6 +78,7 @@
     font-weight: 400;
     padding-bottom: 0;
     margin-bottom: 5%;
+    padding-left: 5%;
   }
 
   .link {
