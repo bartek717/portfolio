@@ -10,9 +10,11 @@ function header() {
         <Link className='px-4' href='/'>Home</Link>
         <Link href='/projects'>Projects</Link>
         <Link href='/research'>Research</Link>
+        <Link href='/articles'>Articles</Link>  
         <Link href='/experience'>Experience</Link>
         <Link href='/mindmap'>Mindmap</Link>
         <Link href='/contact'>Contact</Link>
+        
       
       </div>
     </header>

@@ -1,11 +1,19 @@
-import Image from 'next/image'
+import React from 'react'
 import Header from '../Header'
+import styles from './projects.module.css'
 
-export default function Home() {
+function page() {
   return (
-    <div className="bg">
+    <div className={styles.wrapper}>
       <Header />
-      bye
+      <div className={styles.contentWrapper}>
+        <div className={styles.mainContainer}>
+        
+        hi!
+        </div>
+      </div>
     </div>
   )
 }
+
+export default page
