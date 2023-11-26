@@ -1,0 +1,22 @@
+.header {
+    padding: 10px 0; 
+    color: #BBAEA0;
+  }
+  
+  .links {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+  .links a {
+    color: #BBAEA0;
+    text-decoration: none; 
+    font-size: 1rem;
+    padding: 5px 10px; 
+  }
+  
+  .links a:hover {
+    text-decoration: underline; 
+  }
+  

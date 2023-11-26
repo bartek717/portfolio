@@ -1,0 +1,58 @@
+.wrapper {
+    color: #BBAEA0;
+    
+}
+
+.contentWrapper {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+    outline: 2px solid #BBAEA0; /* Example outline for text section */
+    padding-left: 5%;
+  }
+  
+  .mainContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Position at the exact middle of the container */
+    border-left: 2px solid #BBAEA0; 
+    transform: translateX(-50%); /* Centers the line taking into account its width */
+  }
+
+  .mainText {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .textSection {
+    max-width: 50%;
+  }
+  
+  .imageSection {
+    flex: 1; /* This allows the image section to grow and take up available space */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    max-width: 50%; /* Adjust the width as needed */
+  }
+  
+  .socialLinks {
+    /* Add styles for your social links here */
+  }
+
+  .header {
+    font-size: 120px;
+    font-weight: 400;
+    padding-bottom: 0;
+    margin-bottom: 5%;
+  }
