@@ -1,19 +1,29 @@
 .wrapper {
-    color: #BBAEA0;
-    
+  color: #BBAEA0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will push the footer to the bottom */
+  min-height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+  /* min-height: 100vh; Ensure it takes the full viewport height */
 }
 
 .contentWrapper {
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  flex-grow: 1; /* This makes sure that the content wrapper takes up all available space */
+  overflow: hidden;
+  display: flex;
+  /* outline: 2px solid #BBAEA0; */
 }
-
 .mainContainer {
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    height: 100%;
+    min-height: 100%;
+    margin-bottom: 2%;
     position: relative; /* Needed for the absolute positioning of the pseudo-element */
     outline: 2px solid #BBAEA0; /* Example outline for text section */
     padding-left: 5%;
@@ -35,9 +45,16 @@
   }
 
   .textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items vertically with space between */
     max-width: 50%;
+    min-height: 100%; /* Adjust minimum height as necessary */
   }
   
+  .socialLinks {
+    padding: 3% 0; 
+  }
   .imageSection {
     flex: 1; /* This allows the image section to grow and take up available space */
     display: flex;
@@ -46,13 +63,24 @@
     max-width: 50%; /* Adjust the width as needed */
   }
   
-  .socialLinks {
-    /* Add styles for your social links here */
-  }
-
   .header {
     font-size: 120px;
     font-weight: 400;
     padding-bottom: 0;
     margin-bottom: 5%;
   }
+
+  .link {
+    padding-right: 40px;
+  }
+ 
+ 
+  .picture {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+
+    /* min-height: 80%; 
+    min-width: 70%; */
+  }
+
