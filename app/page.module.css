@@ -77,11 +77,15 @@
  
  
   .picture {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  
-
-    /* min-height: 80%; 
-    min-width: 70%; */
+    width: 60%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
   }
+
+  .picture img {
+    width: 100%; /* This will make the image scale with the .picture div */
+    height: auto; /* This will maintain the aspect ratio of the image */
+  }
+  
 

@@ -36,7 +36,7 @@ export default function Home() {
           </div>
           <div className={styles.imageSection}>
             <div className={styles.picture}>
-              <Image src='/meinqubateheadshots.jpg' width={608} height={778} alt='image of Bartek Kowalski'></Image>
+              <img src='/meinqubateheadshots.jpg' alt='image of Bartek Kowalski'/>
             </div>
           </div>
         </div>

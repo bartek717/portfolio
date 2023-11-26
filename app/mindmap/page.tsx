@@ -6,7 +6,7 @@ function page() {
     <div>
         <Header/>
         <div>
-            Main Content
+            Main content
         </div>
     </div>
   )
