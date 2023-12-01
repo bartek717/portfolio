@@ -30,6 +30,7 @@ function page() {
               title="Project 1" 
               description="Description of Project 1" 
               githubLink="https://github.com/link-to-project-1" 
+              image='/memoria.png'
               />
             </div>
             

@@ -1,13 +1,13 @@
 .projectContainer {
     border: 2px solid #BBAEA0;
     padding: 20px;
-    margin-bottom: 20px;
-    
+    margin: 15px; 
+    display: flex;
   }
-  
   .projectTitle {
     font-size: 24px;
     color: #333;
+    margin-top: 0;
   }
   
   .projectDescription {
@@ -20,3 +20,21 @@
     text-decoration: none;
   }
   
+  .projectContent {
+    display: flex;
+    align-items: center; /* Aligns the image and text content vertically */
+  }
+  
+  .imageWrapper {
+    margin-right: 20px; /* Adjust as necessary for spacing */
+  }
+  
+  .projectImage {
+    width: 100px; /* Adjust as necessary for the size of the image */
+    height: 100px; /* Adjust as necessary to maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  
+  .textWrapper {
+    flex-grow: 1;
+  }
