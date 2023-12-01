@@ -41,6 +41,7 @@
   .contentSection {
     flex: 1; 
     display: flex;
+    flex-direction: row; 
     max-width: 50%;
   }
   .textSection {
@@ -48,6 +49,7 @@
     flex-direction: column;
     max-width: 50%;
     min-height: 100%;
+    justify-content: space-between;
   }
 
   .header {
@@ -58,11 +60,12 @@
     padding-left: 5%;
   }
   
+
   .mainText {
     padding-top: 3%;
     padding-bottom: 3%;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 20px;
     padding-left: 5%;
     padding-right: 2%;
   }

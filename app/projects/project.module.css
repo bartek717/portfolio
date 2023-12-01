@@ -1,0 +1,22 @@
+.projectContainer {
+    border: 2px solid #BBAEA0;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .projectTitle {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .projectDescription {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .githubLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
