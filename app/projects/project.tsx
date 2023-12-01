@@ -5,11 +5,12 @@ import styles from './Project.module.css';
 type ProjectProps = {
   title: string;
   description: string;
+  technologies?:string;
   image?: string;
   githubLink?: string; // Optional prop
 };
 
-const Project: React.FC<ProjectProps> = ({ title, description, image, githubLink }) => {
+const Project: React.FC<ProjectProps> = ({ title, description, image, technologies, githubLink }) => {
     return (
       <div className={styles.projectContainer}>
         <div className={styles.projectContent}>
@@ -21,6 +22,9 @@ const Project: React.FC<ProjectProps> = ({ title, description, image, githubLink
           <div className={styles.textWrapper}>
             <h3 className={styles.projectTitle}>{title}</h3>
             <p className={styles.projectDescription}>{description}</p>
+            {technologies && (
+                <p className={styles.projectDescription}>{technologies}</p>
+            )}
             {githubLink && (
               <a href={githubLink} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
                 View on GitHub
