@@ -1,40 +1,72 @@
 .wrapper {
-    color: #BBAEA0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* This will push the footer to the bottom */
-    min-height: 100vh; /* Full height of the viewport */
-    overflow: hidden;
-    margin: 0;
-    /* min-height: 100vh; Ensure it takes the full viewport height */
-  }
-  
-  .contentWrapper {
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 2%;
-    flex-grow: 1; /* This makes sure that the content wrapper takes up all available space */
-    overflow: hidden;
-    display: flex;
-    /* outline: 2px solid #BBAEA0; */
-  }
-  .mainContainer {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    min-height: 100%;
-    margin-bottom: 2%;
-    position: relative; /* Needed for the absolute positioning of the pseudo-element */
-    outline: 2px solid #BBAEA0; /* Example outline for text section */
-  }
-  
-  .mainContainer::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%; /* Position at the exact middle of the container */
-    border-left: 2px solid #BBAEA0; 
-    transform: translateX(-50%); /* Centers the line taking into account its width */
-  }
+  color: #BBAEA0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; 
+  overflow: hidden;
+  margin: 0;
+}
+
+.contentWrapper {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  flex-grow: 1; 
+  overflow: hidden;
+  display: flex;
+}
+
+.mainContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 100%;
+  margin-bottom: 2%;
+  position: relative; 
+  outline: 2px solid #BBAEA0; 
+}
+
+.mainContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; 
+  border-left: 2px solid #BBAEA0; 
+  transform: translateX(-50%); 
+}
+
+.contentSection {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  max-width: 50%;
+}
+.textSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  min-height: 100%;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: 120px;
+  font-weight: 400;
+  padding-bottom: 0;
+  margin-bottom: 5%;
+  padding-left: 5%;
+}
+
+
+.mainText {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-right: 2%;
+}
+

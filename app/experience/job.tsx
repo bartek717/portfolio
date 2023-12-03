@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Project.module.css';
+import styles from './job.module.css';
 
 type ProjectProps = {
   title: string;
@@ -9,7 +9,7 @@ type ProjectProps = {
   githubLink?: string; 
 };
 
-const Project: React.FC<ProjectProps> = ({ title, description, image, technologies, githubLink }) => {
+const Job: React.FC<ProjectProps> = ({ title, description, image, technologies, githubLink }) => {
     return (
       <div className={styles.projectContainer}>
         <div className={styles.projectContent}>
@@ -35,4 +35,4 @@ const Project: React.FC<ProjectProps> = ({ title, description, image, technologi
     );
   };
 
-  export default Project;
+  export default Job;

@@ -33,7 +33,6 @@ function page() {
               image='/memoria.png'
               />
             </div>
-            
             <div>
               <Project 
               title="Project 2" 
