@@ -43,6 +43,7 @@
   display: flex;
   flex-direction: column; 
   max-width: 50%;
+  margin-top: 10%;
 }
 .textSection {
   display: flex;
@@ -70,3 +71,50 @@
   padding-right: 4%;
 }
 
+.userInput {
+  width: 80%; /* This sets the width of the input containers */
+  margin: 20px auto; /* This will add space above and below each input while auto centers them horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the input vertically in case you have extra height */
+}
+
+.userInput input,
+.userInput textarea {
+  width: 100%; /* This makes the input take the full width of its container (.userInput) */
+  padding: 10px;
+  margin-bottom: 20px; /* This adds space between the input fields */
+  border: 2px solid #BBAEA0;
+  background-color: transparent; /* Assumes the background color is set elsewhere to match */
+  color: #BBAEA0;
+  box-sizing: border-box;
+  border-radius: 0; /* Boxy, no curved corners */
+  outline: none; /* Optional: removes the default focus outline */
+}
+
+.userInput textarea {
+  resize: vertical; /* Allows resizing only vertically */
+}
+
+.submitButton {
+  display: flex; /* This will make it a flex container */
+  justify-content: center; /* This will center its children horizontally */
+  align-items: center; /* This will center its children vertically */
+  width: 100%; /* This takes the full width to allow horizontal centering */
+  margin-top: 20px; /* Adds space above the submit button */
+  margin-bottom: 5%; /* 5 percent margin from the bottom, adjust as needed */
+}
+
+.submitButton button {
+  padding: 10px 20px;
+  border: 2px solid #BBAEA0; /* Adds a border to the button to match the inputs */
+  background-color: #BBAEA0;
+  color: white;
+  cursor: pointer;
+  border-radius: 0; /* Boxy, no curved corners */
+  /* Removed margin and align-self since the container will handle the centering */
+}
+
+.submitButton button:hover {
+  background-color: #a09d9b; /* A darker shade for the hover state */
+}

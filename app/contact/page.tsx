@@ -22,7 +22,7 @@ function Page() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/send', { // Update this with your API route
+      const response = await fetch('/api/send', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ function Page() {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          phone: formData.message // Make sure the key names match the server-side expectations
+          phone: formData.message 
         }),
       });
   
@@ -76,27 +76,40 @@ function Page() {
           </div>
           <div className={styles.contentSection}>
             <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                value={formData.message}
-                onChange={handleChange}
-              />
-              <button type="submit">Send Message</button>
+              <div className={styles.userInput}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className={styles.userInput} >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className={styles.userInput}>
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className={styles.submitButton}>
+                <div>
+                <button type="submit">Send Message</button>
+                </div>
+              </div>
+              
+              
+              
             </form>
           </div>
         </div>

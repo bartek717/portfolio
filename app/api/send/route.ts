@@ -2,8 +2,6 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
-
-
 const sendEmail = async (name: string, email: string, message: string) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
