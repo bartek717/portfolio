@@ -16,10 +16,10 @@ function page() {
                 Articles
               </h1>
               <p className={styles.mainText}>
-                LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM
+                I occasionally write about topics in Machine Learning and AI.
               </p>
               <p className={styles.mainText}>
-                LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM
+                Writing allows me to dig deep into areas that interest me, and convey information in interesting ways. If you have any thoughts about my writing, please feel free to contact me!
               </p>
             </div>
             <SocialLinks/>

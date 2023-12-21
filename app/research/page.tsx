@@ -16,10 +16,10 @@ function page() {
                 Research
               </h1>
               <p className={styles.mainText}>
-                LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM
+                Machine Learning research is currently one of my main focuses. 
               </p>
               <p className={styles.mainText}>
-                LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM LOruM IPSUM
+                Here are some of my developing papers, with more to be added over the coming months.
               </p>
             </div>
             <SocialLinks/>
@@ -27,17 +27,18 @@ function page() {
           <div className={styles.contentSection}>
             <div>
               <Project 
-              title="Project 1" 
-              description="Description of Project 1" 
-              githubLink="https://github.com/link-to-project-1" 
-              image='/memoria.png'
+              title="Effecient Fine Tuning of LLM's using coreset selection methods." 
+              description="I am currently working on this paper. The idea is to use specific subsets of data to tune the model, selected based on different coreset selection methods." 
+              githubLink="https://github.com/bartek717/projectx" 
+              image='/finetune.png'
               />
             </div>
             <div>
               <Project 
-              title="Project 2" 
-              description="Description of Project 1" 
-              githubLink="https://github.com/link-to-project-1" 
+              title="DCL Crowd Counting" 
+              description="My team and I worked with a Kenyan university to solve the problem of long ATM lines in Kenya. We employed numerous strategies, such as Yolov8 and Deep CNN's to solve this problem." 
+              paperLink='https://drive.google.com/file/d/1p5JQlSMlYR9nM-ugCZPRVRmhzSVAtnKY/view?usp=sharing'
+              image='dcl.png'
               />
             </div>
           </div>
