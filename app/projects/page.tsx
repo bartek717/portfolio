@@ -30,7 +30,7 @@ function page() {
               title="Memoria" 
               description="Memoria is a journaling and self reflection tool powered by gpt4. Simply speak into your phone, all of your thoughts will be accessible via chat." 
               githubLink="https://github.com/Memoria-ai/memoria.live" 
-              image='memoria.png'
+              image='Memoria.png'
               />
             </div>
             <div>
