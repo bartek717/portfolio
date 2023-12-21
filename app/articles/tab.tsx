@@ -7,9 +7,10 @@ type ProjectProps = {
   technologies?:string;
   image?: string;
   githubLink?: string; 
+  mediumLink?: string;
 };
 
-const Job: React.FC<ProjectProps> = ({ title, description, image, technologies, githubLink }) => {
+const Job: React.FC<ProjectProps> = ({ title, description, image, technologies, githubLink, mediumLink }) => {
     return (
       <div className={styles.projectContainer}>
         <div className={styles.projectContent}>
@@ -27,6 +28,11 @@ const Job: React.FC<ProjectProps> = ({ title, description, image, technologies, 
             {githubLink && (
               <a href={githubLink} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
                 View on GitHub
+              </a>
+            )}
+            {mediumLink && (
+              <a href={mediumLink} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
+                View on Medium
               </a>
             )}
           </div>

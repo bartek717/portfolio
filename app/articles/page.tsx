@@ -27,18 +27,13 @@ function page() {
           <div className={styles.contentSection}>
             <div>
               <Project 
-              title="Paper 1" 
-              description="Description of Project 1" 
-              githubLink="https://github.com/link-to-project-1" 
+              title="ChatGPT: Is the Education Industry Ready?" 
+              description="Over the past year or so I've seen the education landscape completely transform. Its impact on the next generation of students will be profound, and limit their creativity and problem solving. What can we do about this?" 
+              mediumLink='https://medium.com/qmind-ai/chatgpt-is-the-education-industry-ready-df8bd7575371'
+              image='school.png'
               />
             </div>
-            <div>
-              <Project 
-              title="Project 2" 
-              description="Description of Project 1" 
-              githubLink="https://github.com/link-to-project-1" 
-              />
-            </div>
+            
           </div>
         </div>
       </div>
