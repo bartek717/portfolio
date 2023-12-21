@@ -27,24 +27,26 @@ function page() {
           <div className={styles.contentSection}>
             <div>
               <Project 
-              title="Project 1" 
-              description="Description of Project 1" 
-              githubLink="https://github.com/link-to-project-1" 
+              title="Memoria" 
+              description="Memoria is a journaling and self reflection tool powered by gpt4. Simply speak into your phone, all of your thoughts will be accessible via chat." 
+              githubLink="https://github.com/Memoria-ai/memoria.live" 
               image='/memoria.png'
               />
             </div>
             <div>
               <Project 
-              title="Project 2" 
-              description="Description of Project 1" 
-              githubLink="https://github.com/link-to-project-1" 
+              title="Bias Detection within LLM's" 
+              description="With todays jump in LLM usage, I wondered how the use of news articles in training data may impact the model. Here, I use DistilBert and BertForMaskedLM to try to find and replace biased words with nuetral ones." 
+              githubLink="https://github.com/bartek717/bias_analysis/tree/main" 
+              image='llm.png'
               />
             </div>
             <div>
               <Project 
-              title="Project 3" 
-              description="Description of Project 1" 
-              githubLink="https://github.com/link-to-project-1" 
+              title="Flight Checker" 
+              description="I wanted an automated way to check google flights for cheap flights to a set of specific locations, custom built for the features I wanted. This didnt exist for free, so I built it for personal use." 
+              githubLink="https://github.com/bartek717/flight-checker" 
+              image='plane.png'
               />
             </div>
           </div>

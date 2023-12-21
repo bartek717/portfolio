@@ -16,6 +16,8 @@ export default function Home() {
                  Student out of Queens University.</p>
               <p className={styles.mainText}>My interests ly in the fields of NLP, Reinforcement
                  Learning and Autonomous Agents.</p>
+              {/* add link here */}
+              <a className={styles.mainText} href="https://drive.google.com/file/d/1-6Vw9NuIaDjWoB1oJoV20rdTrwGNVjk2/view?usp=sharing" target="_blank">View My Resume</a>
             </div>
             <SocialLinks/>
             
