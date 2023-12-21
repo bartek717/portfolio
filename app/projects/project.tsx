@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Project.module.css';
+import styles from './project.module.css';
 
 type ProjectProps = {
   title: string;
