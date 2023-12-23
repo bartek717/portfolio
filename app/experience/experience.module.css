@@ -99,7 +99,18 @@
   width: 100%;
   height: auto;
 }
-
+.contentSection {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  max-width: 50%;
+}
+.contentSection {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  max-width: 50%;
+}
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
   .mainContainer {
@@ -136,6 +147,9 @@
   }
   .header {
     font-size: 70px;
+  }
+  .contentSection {
+    max-width: 100%;
   }
 }
 

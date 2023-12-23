@@ -1,6 +1,7 @@
 .header {
   padding: 10px 0; 
-  color: #BBAEA0;
+  /* color: #BBAEA0; */
+  background-color: #131516;
   position: relative;
 }
 
@@ -34,7 +35,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: white;
+  background: #131516;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +46,7 @@
 
 .mobileLinks.open {
   left: 0;
+  background-color: #131516;
 }
 
 .closeButton {
