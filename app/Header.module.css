@@ -24,6 +24,7 @@
 .menuIcon {
   display: none;
   cursor: pointer;
+  margin-left: 3%;
   /* Style your menu icon here */
 }
 
@@ -50,6 +51,7 @@
   position: absolute;
   top: 10px;
   left: 0px; /* Changed from right to left */
+  margin-left: 3%;
   background: none;
   border: none;
   color: #BBAEA0;

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh; 
+  min-height: 100vh;
   overflow: hidden;
   margin: 0;
 }
@@ -12,7 +12,7 @@
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 2%;
-  flex-grow: 1; 
+  flex-grow: 1;
   overflow: hidden;
   display: flex;
 }
@@ -24,8 +24,8 @@
   align-items: stretch;
   min-height: 100%;
   margin-bottom: 2%;
-  position: relative; 
-  outline: 2px solid #BBAEA0; 
+  position: relative;
+  outline: 2px solid #BBAEA0; /* Keeps the box outline */
 }
 
 .mainContainer::after {
@@ -33,34 +33,10 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%; 
-  border-left: 2px solid #BBAEA0; 
-  transform: translateX(-50%); 
+  left: 50%;
+  border-left: 2px solid #BBAEA0;
+  transform: translateX(-50%);
 }
-
-.contentSection {
-  flex: 1; 
-  display: flex;
-  flex-direction: column; 
-  max-width: 50%;
-}
-.textSection {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
-  min-height: 100%;
-  justify-content: space-between;
-}
-
-.header {
-  font-size: 100px;
-  font-weight: 400;
-  padding-bottom: 0;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  padding-left: 5%;
-}
-
 
 .mainText {
   padding-top: 3%;
@@ -69,5 +45,97 @@
   font-size: 20px;
   padding-left: 5%;
   padding-right: 2%;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+  min-height: 100%;
+}
+
+.socialLinks {
+  padding-left: 5%;
+  padding-bottom: 3%;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  outline: 2px solid #BBAEA0; /* Box around the image */
+}
+
+.header {
+  font-size: 100px;
+  font-weight: 400;
+  padding-bottom: 0;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  padding-left: 5%;
+}
+
+.link {
+  padding-right: 40px;
+}
+
+.picture {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .textSection, .imageSection {
+    max-width: 100%;
+    max-height: none;
+    min-height: 0%;
+    justify-content: start; 
+    outline: none; /* Remove the dividing line and box in mobile view */
+  }
+  
+  /* .textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    min-height: 100%;
+  } */
+
+  .mainContainer::after {
+    display: block; /* Keep the dividing line */
+    left: 0;
+    top: 50%;
+    border-left: none;
+    border-top: 2px solid #BBAEA0; /* Horizontal line in mobile view */
+  }
+
+  .imageSection {
+    outline: 2px solid #BBAEA0; /* Keep the box around the image in mobile view */
+  }
+  .header {
+    font-size: 70px;
+  }
 }
 
