@@ -32,6 +32,12 @@ function page() {
               mediumLink='https://medium.com/qmind-ai/chatgpt-is-the-education-industry-ready-df8bd7575371'
               image='school.png'
               />
+              <Project 
+                title="The Rise and Potential of Open Source Large Language Models in AI" 
+                description="Over the past couple of months, we have seen the emergence of Large Language models that begin to compete with the state of the art. Where does this go next?" 
+                mediumLink='https://medium.com/@bartekmkowalski/the-rise-and-potential-of-open-source-large-language-models-in-ai-0d30450f8b3c'
+                image='brain2.png'
+              />
             </div>
             
           </div>
