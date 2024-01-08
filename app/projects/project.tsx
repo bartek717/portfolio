@@ -7,9 +7,10 @@ type ProjectProps = {
   technologies?:string;
   image?: string;
   githubLink?: string; 
+  websiteLink?: string;
 };
 
-const Project: React.FC<ProjectProps> = ({ title, description, image, technologies, githubLink }) => {
+const Project: React.FC<ProjectProps> = ({ title, description, image, technologies, githubLink, websiteLink }) => {
     return (
       <div className={styles.projectContainer}>
         <div className={styles.projectContent}>
@@ -27,6 +28,11 @@ const Project: React.FC<ProjectProps> = ({ title, description, image, technologi
             {githubLink && (
               <a href={githubLink} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
                 View on GitHub
+              </a>
+            )}
+            {websiteLink && (
+              <a href={websiteLink} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
+                Website Link
               </a>
             )}
           </div>

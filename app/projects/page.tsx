@@ -35,6 +35,15 @@ function page() {
             </div>
             <div>
               <Project 
+              title="DocumentAI" 
+              description="DocumentAI allows a user to chat and use a chatbot within a document editor, using their own files as context. It optimizes the time it takes to use ChatGPT by integrating it into a single interface." 
+              githubLink="https://github.com/bartek717/documentai" 
+              image='doc.png'
+              websiteLink='https://documentai-three.vercel.app/'
+              />
+            </div>
+            <div>
+              <Project 
               title="Bias Detection within LLM's" 
               description="With todays jump in LLM usage, I wondered how the use of news articles in training data may impact the model. Here, I use DistilBert and BertForMaskedLM to try to find and replace biased words with nuetral ones." 
               githubLink="https://github.com/bartek717/bias_analysis/tree/main" 
