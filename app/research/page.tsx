@@ -29,7 +29,7 @@ function page() {
               <Project 
               title="Effecient Fine Tuning of LLM's using coreset selection methods." 
               description="I am currently working on this paper. The idea is to use specific subsets of data to tune the model, selected based on different coreset selection methods." 
-              githubLink="https://github.com/bartek717/projectx" 
+              paperLink="https://drive.google.com/file/d/1IfwUNqBIgRo-SQ_JeLR_gn6TTh12475q/view?usp=sharing" 
               image='/finetune.png'
               />
             </div>
