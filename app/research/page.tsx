@@ -28,7 +28,10 @@ function page() {
             <div>
               <Project 
               title="Effecient Fine Tuning of LLM's using coreset selection methods." 
-              description="I am currently working on this paper. The idea is to use specific subsets of data to tune the model, selected based on different coreset selection methods." 
+              description="Utilized coreset selection methods such as KCenterGreedy and Active Learning to reduce the time it takes to
+              fine tune an LLM, while retaining performance metrics (reducing training time by 80%). Placed second at
+              ProjectX, the world's largest international undergraduate machine learning contest among leading universities.
+              " 
               paperLink="https://drive.google.com/file/d/1IfwUNqBIgRo-SQ_JeLR_gn6TTh12475q/view?usp=sharing" 
               image='/finetune.png'
               />
