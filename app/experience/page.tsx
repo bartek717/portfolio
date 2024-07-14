@@ -25,6 +25,13 @@ function page() {
             <SocialLinks/>
           </div>
           <div className={styles.contentSection}>
+          <div>
+              <Job 
+              title="Exavalu - Software Engineering Intern" 
+              description="Developed distributed vehicle fleet tracking applications, working on both the frontend and backend, using Java, Springboot, and MySQL. " 
+              image='/exavalu.jpg'
+              />
+            </div>
             <div>
               <Job 
               title="Distributive - Software Engineering Intern" 
